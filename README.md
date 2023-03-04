@@ -1,12 +1,7 @@
 ### Hi there 👋 I'm Sean O'Mahoney
 
-I like technology, beer and emoji's 😁
+I am a co-founder of [INEVITABLE](https://inevitableinnovations.com/), an award-winning AI start-up company based in Manchester, and I personally have a deep passion for technology, community, and beer.
 
-- 🏢 Co-Founded [INEVITABLE](https://inevitableinnovations.com/)
-- 🎓 Computer Science First-Class Honours Graduate from Manchester Metropolitan University
-- 🤝 Attendeed ~400 Networking Events in the Manchester Tech Scene, inspiring [CompiledMCR](https://compiledmcr.com/)
-- 💡 Co-Organized, Judged, Mentored, Volunteered and Attendeed 27 [Hackathons](https://hackathon.guide/) ([Polywork Collection](https://www.polywork.com/sean12697/collections/1081458))
-- 🎪 Worked at 10 Beer Festivals ([Polywork Collection](https://www.polywork.com/sean12697/collections/1081961))
-- 🍻 Checked in 2,700+ Unique Beers on [Untappd](https://untappd.com/user/sean12697)
+Aside from the knowledge I gained from my Computer Science degree from MMU, which I achieved with first-class honours in 2019, I have learned a wide range of skills and built a network through projects, hackathons ([Polywork Highlight](https://www.polywork.com/sean12697/collections/1081458)), communities ([Polywork Highlight](https://www.polywork.com/sean12697/collections/1088157)), and extracurricular activities that I have both taken part in and helped organise and judge. Beyond the technical and hozion-scanning knowledge and network I have picked up from these actions, I have also found myself in a quite respected position: that of being a key member of hundred plus people or company programmes, communities, and hackathons, which range from being a key member of programmes such as the [Greater Manchester AI Foundry](https://gmaifoundry.ac.uk/), a £3M ERDF-funded program, to being an organisational member of community groups such as [CodeWith](https://codewith.org.uk/about/) (previously CodeUp), [Silicon DrinkAbouts](https://twitter.com/drinkaboutmcr), [Manchester Web Meetup](https://jamesseanwright.medium.com/the-future-of-manchester-web-meetup-8dbd15b2d677), and [running the Computing Society at MMU](https://blog.seanomahoney.com/running-the-mmu--computing-society), to helping organise hackathons such as [ManMetHacks](https://manmethacks2020.devpost.com/) and MLH days.
 
-Upcoming beer festivals that I'm working at: [CAMRA Central Manchester Beer & Cider Festival](https://centralmanchesterbeerfest.com/) (12th Nov 2022).
+I have built a similar network in the beer world; I have worked at 11 beer festivals ([Polywork Highlight](https://www.polywork.com/sean12697/collections/1081961)), checked in 2,800+ beers on Untappd, held several official roles in CAMRA, and participated in other networks outside of that. So far for CAMRA, I hold the roles of social media coordinator for "[Pubs. Pints. People.](https://camra.org.uk/podcast/)" (their official podcast), Young Members Cooridator for the Central Manchester branch, Brewery Liason Officer (BLO) for Temperance Street Brewery, and Surveyor for the CAMRA Good Beer Guide.
