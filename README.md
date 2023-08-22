@@ -1,15 +1,71 @@
-### Hi there 👋 I'm Sean O'Mahoney
+## Hi there! 👋 I'm Sean O'Mahoney
 
-I am a co-founder of [INEVITABLE](https://inevitableinnovations.com/), an award-winning AI start-up company based in Manchester, and I personally have a deep passion for technology, community, and craft beer.
+### Quick Overview
 
-Having graduated from the Manchester Metropolitan University with a first-class honours degree in Computer Science in 2019, I have continued to learn a wide range of advanced digital and cyber skills and have built connections throughout the projects, hackathons ([Polywork Highlight](https://www.polywork.com/sean12697/collections/1081458)), communities ([Polywork Highlight](https://www.polywork.com/sean12697/collections/1088157)), and extracurricular activities that I have both participated in and organised.
+- 🚀 Co-founder of [INEVITABLE](https://inevitableinnovations.com/), an award-winning AI startup in Manchester
+- 🤝 Attended ~400 Networking Events in the Manchester Tech Scene, inspiring [CompiledMCR](https://compiledmcr.com/)
+- 💡 Involved in 27 [Hackathons](https://hackathon.guide/) ([Polywork Collection](https://www.polywork.com/sean12697/collections/1081458)): Co-Organized, Judged, Mentored, Volunteered, and Attended
+- 🎪 Worked at 16 Beer Festivals ([Polywork Collection](https://www.polywork.com/sean12697/collections/1081961))
+- 🍻 Checked in ~3,200 Unique Beers on [Untappd](https://untappd.com/user/sean12697)
 
-I have been well known within the Manchester Tech Scene since 2016, when I both started University and started attending events, due to having attended over 400 networking events and 27 hackathons, consulting many organisers on venues, speakers, optimum dates, and more for their events, and also for initiating the [CompliedMCR](https://compiledmcr.com/) project in 2017, an open-source tool maintained by INEVITABLE that was made to be used by the community.
+### Primary Technologies (to be enhanced)
 
-I have also found myself in a quite respected position due to those factors and being an organiser or key member of hundreds to thousands of people/company programmes, accelerator, incubators, communities, and hackathons within Greater Manchester. 
+- IaaS / Cloud: AWS...
+- PaaS: Netlify, Heroku...
+- DevOps: Terraform, Linux, Github Actions...
+- Databases: MongoDB, PostgreSQL, Neo4j...
+- Libraries: ...
+- Languages: TypeScript, JavaScript, Python...
 
-These positions range from INEVITABLE being a key ally in the success of programmes such as the [Greater Manchester AI Foundry](https://gmaifoundry.ac.uk/), a £3M ERDF-funded programme, to being an organiser of community groups such as [CodeWith](https://codewith.org.uk/about/), CodeUp, [Silicon DrinkAbouts](https://twitter.com/drinkaboutmcr), [Manchester Web Meetup](https://jamesseanwright.medium.com/the-future-of-manchester-web-meetup-8dbd15b2d677), to helping organise hackathons such as [ManMetHacks](https://manmethacks2020.devpost.com/), MLH days and [running the Computing Society at MMU](https://blog.seanomahoney.com/running-the-mmu--computing-society).
+### Roles / Hats
 
-Beyond these technology-based skills and connections, I have also built a similar portfolio in the beer world; I have worked at 11 beer festivals so far ([Polywork Highlight](https://www.polywork.com/sean12697/collections/1081961)), checked in 2,800+ beers on Untappd, hold several official roles in CAMRA, the Campaign for Real Ale, and participate in plenty of other beer-based groups. 
+#### Current / Active
 
-So far with CAMRA, I hold the roles of social media coordinator for "[Pubs. Pints. People.](https://camra.org.uk/podcast/)" (their official podcast), Young Members Cooridator for the Central Manchester branch, Brewery Liason Officer (BLO) for Temperance Street Brewery, and Surveyor for the CAMRA Good Beer Guide.
+- 👥 Co-founder of [INEVITABLE](https://inevitableinnovations.com/)
+- 🙌 Volunteer (several roles) for [CAMRA](https://camra.org.uk/)
+
+#### Standby / Passive
+
+- 🧑‍🤝‍🧑 Volunteer at several (non-CAMRA) Beer Festivals (i.e. [WeAreBeer](https://wearebeer.com/), [IMBC](https://www.indymanbeercon.co.uk/)...)
+- 🥂 Organizer of [Silicon Drinkabout Manchester](https://twitter.com/drinkaboutmcr?lang=en)
+- 📣 Publicity Officer & Mentor for [CodeWith](https://codewith.org.uk/people/)
+- 🤝 Volunteer (Web Development) for the [Street Support Network](https://streetsupport.net/)
+- 👨‍🍳 Mentor at [Full Stack of Pancakes](https://www.eventbrite.com/o/full-stack-of-pancakes-14858329308)
+- 🧑‍🏫 Mentor at [Free Code Camp Manchester](https://www.facebook.com/groups/free.code.camp.manchester/)
+- 👨‍⚖️ Judge & Mentor at [ManMetHacks](https://github.com/helloHackersSociety)
+- 📸 Photographer & Mentor at [MLH Local Hack Day - Manchester](https://twitter.com/MMU_LHD)
+
+#### Previous
+
+- 👥 Co-Organizer & Mentor for CodeUp (superseded by CodeWith)
+- 📢 Co-Organizer of the [Manchester Web Meetup](https://jamesseanwright.medium.com/the-future-of-manchester-web-meetup-8dbd15b2d677)
+- 📸 Photographer for [SPIN (Supporting People In Need)](https://supportingpeopleinneed.org/)
+
+##### University Accomplishments (Roles; Including Awards)
+
+- 👥 Peer Mentor (2018)
+- 🎓 2nd Year Computer Science Rep (2017/18)
+- 📚 Secretary of the Computing Society (2017/18)
+- 👥 Academic Representative for the Societies Council (2017/18)
+- ✍️ Freelancer for AaH! (previously Humanity Hallows), the official MMU Student Magazine (2017–18)
+- 📷 Chair of the Photography Society ([shortlisted for Most Improved Society of the Year](https://www.theunionmmu.org/articles/society-awards-2018-shortlists-announced), 2017–18)
+- 🧑‍🏫 Workshop Lead for the Faculty of Arts and Humanities (2018)
+- 🏆 [Shortlisted as Committee Member of the Year](https://www.theunionmmu.org/articles/society-awards-2018-shortlists-announced) (2018)
+- 🪑 Chair of the Computing Society (2018–19)
+- 🏅 Faculty of Science and Engineering Extracurricular Award (2018 & 2019)
+- 🎖️ [Societies Honours Award from the Students Union](https://www.theunionmmu.org/opportunities/societies-awards/2019-winners) (2019)
+
+### Contact
+
+#### Social Media
+
+- 🐦 Twitter: [https://twitter.com/Sean12697](https://twitter.com/Sean12697)
+- 💼 LinkedIn: [https://www.linkedin.com/in/sean12697/](https://www.linkedin.com/in/sean12697/)
+- 🌐 PolyWork: [https://www.polywork.com/sean12697](https://www.polywork.com/sean12697)
+- ✍️ Blog: [https://blog.seanomahoney.com/](https://blog.seanomahoney.com/)
+
+#### Email Addresses
+
+- 📧 Professional: sean@inevitableteam.com
+- 📧 CAMRA (Greater Manchester's Regional Young Members Coordinator): ym@greatermanchester.camra.org.uk
+- 📧 Personal: seanomahoney@protonmail.com
