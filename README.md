@@ -6,7 +6,7 @@
 - 🤝 Attended ~400 Networking Events in the Manchester Tech Scene, inspiring [CompiledMCR](https://compiledmcr.com/)
 - 💡 Involved in 27 [Hackathons](https://hackathon.guide/) ([Pollywork Collection](https://www.polywork.com/sean12697/collections/1081458)): Co-Organized, Judged, Mentored, Volunteered, and Attended
 - 🎪 Worked at 16 Beer Festivals ([Pollywork Collection]((https://www.polywork.com/sean12697/collections/1081961)))
-- 🍻 Checked in beer_checkins_val Unique Beers on [Untappd](https://untappd.com/user/sean12697)
+- 🍻 Checked in 3686 Unique Beers on [Untappd](https://untappd.com/user/sean12697)
 
 ### Primary Technologies (to be enhanced)
 
@@ -72,4 +72,4 @@
 
 [hackathons_ref]: https://www.polywork.com/sean12697/collections/1081458
 [beer_festivals_ref]: https://www.polywork.com/sean12697/collections/1081961
-[3686]: https://untappd.com/user/sean12697
+[beer_checkins_ref]: https://untappd.com/user/sean12697
