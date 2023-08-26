@@ -5,7 +5,7 @@
 - 🚀 Co-founder of [INEVITABLE](https://inevitableinnovations.com/), an award-winning AI startup in Manchester
 - 🤝 Attended ~400 Networking Events in the Manchester Tech Scene, inspiring [CompiledMCR](https://compiledmcr.com/)
 - 💡 Involved in 27 [Hackathons](https://hackathon.guide/) ([Pollywork Collection](https://www.polywork.com/sean12697/collections/1081458)): Co-Organized, Judged, Mentored, Volunteered, and Attended
-- 🎪 Worked at 16 Beer Festivals ([Pollywork Collection]((https://www.polywork.com/sean12697/collections/1081961)))
+- 🎪 Worked at 16 Beer Festivals ([Pollywork Collection](https://www.polywork.com/sean12697/collections/1081961))
 - 🍻 Checked in 3686 Unique Beers on [Untappd](https://untappd.com/user/sean12697)
 
 ### Primary Technologies (to be enhanced)
@@ -69,7 +69,3 @@
 - 📧 Professional: sean@inevitableteam.com
 - 📧 CAMRA (Greater Manchester's Regional Young Members Coordinator): ym@greatermanchester.camra.org.uk
 - 📧 Personal: seanomahoney@protonmail.com
-
-[hackathons_ref]: https://www.polywork.com/sean12697/collections/1081458
-[beer_festivals_ref]: https://www.polywork.com/sean12697/collections/1081961
-[beer_checkins_ref]: https://untappd.com/user/sean12697
