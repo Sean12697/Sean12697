@@ -26,7 +26,7 @@ SOURCES: dict[str, Fetcher] = {
     "steam": steam.fetch,
 }
 
-# What a source looks like when it has never succeeded (no snapshot yet).
+# What a source renders as when it fails this run.
 EMPTY: dict[str, dict[str, Any]] = {
     "stats": stats.EMPTY,
     "steam": steam.EMPTY,

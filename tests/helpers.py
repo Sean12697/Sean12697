@@ -38,7 +38,6 @@ def settings(tmp: Path, **kw: Any) -> Settings:
     base = {
         "template": ROOT / "template.md",
         "output": tmp / "README.md",
-        "snapshot": tmp / "snapshot.json",
         "steam_api_key": "test-key",
     }
     base.update(kw)

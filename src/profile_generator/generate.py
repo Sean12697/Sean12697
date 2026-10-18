@@ -9,7 +9,6 @@ from datetime import UTC, datetime
 from importlib import resources
 from typing import Any
 
-from profile_generator import snapshot
 from profile_generator.blocks import BLOCKS
 from profile_generator.errors import SourceError
 from profile_generator.http import HttpError, JsonClient, UrllibClient
@@ -33,11 +32,10 @@ def demo_data() -> dict[str, Any]:
 
 
 def collect(settings: Settings, http: JsonClient | None = None) -> tuple[dict, dict[str, str]]:
-    """Fetch every source; fall back to the snapshot, then to EMPTY, per source."""
+    """Fetch every source; a failing source falls back to its EMPTY defaults."""
     if settings.offline:
         return demo_data(), {}
     http = http or UrllibClient(timeout=settings.timeout, retries=settings.retries)
-    previous = snapshot.load(settings.snapshot)
     data: dict[str, Any] = {}
     failures: dict[str, str] = {}
     for name, fetch in SOURCES.items():
@@ -46,9 +44,8 @@ def collect(settings: Settings, http: JsonClient | None = None) -> tuple[dict, d
             log.info("source %s: ok", name)
         except (SourceError, HttpError, KeyError, TypeError, ValueError) as exc:
             failures[name] = str(exc)
-            fallback = "snapshot" if name in previous else "empty defaults"
-            log.warning("source %s failed (%s); using %s", name, exc, fallback)
-            data[name] = previous.get(name, EMPTY[name])
+            log.warning("source %s failed (%s); using fallback text", name, exc)
+            data[name] = EMPTY[name]
     return data, failures
 
 
@@ -67,17 +64,9 @@ def generate(
     settings: Settings,
     http: JsonClient | None = None,
     now: datetime | None = None,
-    persist: bool = True,
 ) -> Result:
     data, failures = collect(settings, http)
     ctx = build_context(data, now)
     template = settings.template.read_text(encoding="utf-8")
     markdown = render_template(template, ctx).rstrip() + "\n"
-    if persist and not settings.offline:
-        # Only refresh the snapshot for sources that actually succeeded.
-        previous = snapshot.load(settings.snapshot)
-        snapshot.save(
-            settings.snapshot,
-            {**previous, **{k: v for k, v in data.items() if k not in failures}},
-        )
     return Result(context=ctx, markdown=markdown, failures=failures)

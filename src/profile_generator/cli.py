@@ -26,7 +26,6 @@ def _parser() -> argparse.ArgumentParser:
     def common(sp: argparse.ArgumentParser) -> None:
         sp.add_argument("--offline", action="store_true", default=None, help="use demo data")
         sp.add_argument("--template", type=Path)
-        sp.add_argument("--snapshot", type=Path)
         sp.add_argument("--steam-games", type=int)
         sp.add_argument("--timeout", type=float)
 
@@ -54,7 +53,7 @@ def main(argv: list[str] | None = None) -> int:
         format="%(levelname)s %(message)s",
         stream=sys.stderr,
     )
-    keys = ("offline", "template", "snapshot", "steam_games", "timeout", "output", "strict")
+    keys = ("offline", "template", "steam_games", "timeout", "output", "strict")
     overrides = {k: getattr(args, k, None) for k in keys}
     settings = Settings.load(args.config, args.env_file, overrides=overrides)
 
@@ -83,7 +82,7 @@ def main(argv: list[str] | None = None) -> int:
         return 1 if failures and settings.strict else 0
 
     try:
-        result = generate(settings, persist=not args.stdout)
+        result = generate(settings)
     except TemplateError as exc:
         print(f"template: {exc}", file=sys.stderr)
         return 1

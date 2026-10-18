@@ -1,4 +1,3 @@
-import json
 import tempfile
 import unittest
 from datetime import UTC, datetime
@@ -42,23 +41,18 @@ class GenerateTests(unittest.TestCase):
         self.assertIn("19 October 2026, 07:00 UTC", md)
         self.assertNotIn("{{", md)
         self.assertNotIn("{#", md)
-        snap = json.loads(self.s.snapshot.read_text())
-        self.assertEqual(snap["stats"]["hackathons"], 28)
 
-    def test_failed_source_falls_back_to_snapshot(self):
-        generate(self.s, FakeHttp(routes()), NOW)
+    def test_failed_source_uses_fallback_text(self):
         down = HttpError("x", 503, "down")
         http = FakeHttp(routes(**{STATS_URL: down}))
         result = generate(self.s, http, NOW)
         self.assertIn("stats", result.failures)
-        self.assertIn("**28** [hackathons]", result.markdown)
-
-    def test_failed_source_without_snapshot_uses_empty_defaults(self):
-        down = HttpError("x", 503, "down")
-        http = FakeHttp(routes(**{STATS_URL: down}))
-        result = generate(self.s, http, NOW)
         self.assertIn("**many** [hackathons]", result.markdown)
-        self.assertNotIn("stats", json.loads(self.s.snapshot.read_text()))
+        self.assertIn("Brand New", result.markdown)
+
+    def test_render_writes_nothing_but_output(self):
+        generate(self.s, FakeHttp(routes()), NOW)
+        self.assertEqual(list(self.dir.iterdir()), [])
 
     def test_no_games_message(self):
         self.assertIn("Nothing on Steam", games.render({"steam": {"games": []}}))

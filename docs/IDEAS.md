@@ -1,4 +1,4 @@
-# Divergent thinking
+# Ideas
 
 A decision record of ideas beyond the brief. Each round keeps its ideas and their status.
 
@@ -23,10 +23,9 @@ The brief: move the generator into Sean12697/Sean12697, read hackathons, beer fe
 | Light and dark images | `<picture>` with `prefers-color-scheme` sources for badges and art | Medium | Low | Proposed |
 | SVG summary card | One generated SVG stat card committed to the repo instead of shields.io | Medium | Medium | Proposed |
 | Year in numbers | Hackathons and festivals per year from `timeline.byYear` as a sparkline | Medium | Medium | Proposed |
-| Game history | Keep a rolling history of games in the snapshot for "most played this year" | Medium | Medium | Proposed |
 | Now playing badge | Show the currently running Steam game if any | Low | Low | Proposed |
 | Achievement icons | Recent unlocked achievement icons per game (the old code started this) | Low | Medium | Proposed |
-| Change-only commits | Commit only when data changes, plus a monthly keepalive | Low | Low | Rejected: daily footer commits already keep the schedule alive with less moving parts |
+| Change-only commits | Commit only when data changes, plus a monthly keepalive | Low | Low | Rejected: daily footer commits already keep the schedule alive with fewer moving parts |
 | Section order in settings | Assemble sections from settings rather than one template | Low | Medium | Rejected: a single template is easier to edit and reason about |
 | Failure alert | Open an issue when a source has fallen back for several days | Medium | Low | Proposed |
 | Untappd stats direct | Call the Untappd API as a second source of truth | Low | Medium | Rejected: stats.json is the agreed single source |

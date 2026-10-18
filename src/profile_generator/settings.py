@@ -42,7 +42,7 @@ class Settings:
     timeout: float = _f(20.0, "HTTP timeout in seconds per request.")
     retries: int = _f(2, "Retries for transient HTTP failures (5xx, 429, network).")
     offline: bool = _f(False, "Use bundled demo data instead of the network.")
-    strict: bool = _f(False, "Exit non-zero if any source fails (instead of using the snapshot).")
+    strict: bool = _f(False, "Exit non-zero if any source fails (instead of its fallback text).")
 
     # loading
 

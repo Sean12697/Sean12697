@@ -25,6 +25,8 @@ The pipeline has three kinds of module, each with one job:
 | Block | `src/profile_generator/blocks/` | Turn context data into a Markdown or HTML snippet | `{{ blocks.<name> }}` |
 | Template | `template.md` | Layout and all static content | |
 
+When a source fails (API down, rate limited, no key), the run carries on and that source renders its fallback text instead ("many hackathons", "Nothing on Steam"), so the profile never shows an error or a zero. Nothing is stored between runs: the only file a run writes is `README.md`. Pass `--strict` to make failures exit non-zero instead.
+
 ## Data sources
 
 **stats** reads [seanomahoney.com/stats.json](https://seanomahoney.com/stats.json) and exposes `stats.hackathons` (`timeline.hackathons`), `stats.beer_festivals` (`timeline.beerFestivals`) and `stats.beers` (`untappd.formattedBeers`, for example "6,000+"). The whole document is also available as `stats.raw`, so any other figure can go straight into the template, for example `{{ stats.raw.content.blogPosts }}`.
@@ -39,14 +41,14 @@ Requires Python 3.11 or later. There are no runtime dependencies beyond the stan
 pip install -e ".[dev]"
 profile-gen render --offline --stdout   # preview with bundled demo data, writes nothing
 cp .env.example .env                    # then set PROFILE_STEAM_API_KEY (or STEAM_API_KEY)
-profile-gen render                      # fetch live data, write README.md and the snapshot
+profile-gen render                      # fetch live data and write README.md
 ```
 
 ## Commands
 
 | Command | What it does |
 | :-- | :-- |
-| `profile-gen render` | Fetch every source, render `template.md`, write `README.md` |
+| `profile-gen render` | Fetch every source, render `template.md` and write `README.md` |
 | `profile-gen render --stdout` | Same, but print the result and write nothing |
 | `profile-gen render --offline` | Use the bundled demo data instead of the network |
 | `profile-gen fetch` | Print the fetched data and any failures as JSON |
@@ -73,7 +75,7 @@ Precedence, lowest to highest: built-in defaults, the `[settings]` table in `pro
 | `timeout` | `PROFILE_TIMEOUT` | `20.0` | HTTP timeout in seconds per request. |
 | `retries` | `PROFILE_RETRIES` | `2` | Retries for transient HTTP failures (5xx, 429, network). |
 | `offline` | `PROFILE_OFFLINE` | `False` | Use bundled demo data instead of the network. |
-| `strict` | `PROFILE_STRICT` | `False` | Exit non-zero if any source fails (instead of using the snapshot). |
+| `strict` | `PROFILE_STRICT` | `False` | Exit non-zero if any source fails (instead of its fallback text). |
 
 ## Editing the template
 
@@ -94,7 +96,7 @@ Keep blank lines out of HTML blocks (`<table>`, `<p>`) and leave a blank line af
 
 ## Adding a source or block
 
-1. Add `sources/<name>.py` with `fetch(settings, http) -> dict` and an `EMPTY` dict, raising `SourceError` when it cannot produce data.
+1. Add `sources/<name>.py` with `fetch(settings, http) -> dict` and an `EMPTY` dict of fallback values, raising `SourceError` when it cannot produce data.
 2. Register both in `SOURCES` and `EMPTY` in `sources/__init__.py`.
 3. If the data needs formatting, add `blocks/<name>.py` with `render(ctx) -> str` and register it in `BLOCKS`.
 4. Add any new settings to the `Settings` dataclass, regenerate `.env.example` with `make env-example`, and add tests using the `FakeHttp` helper so nothing touches the network.
