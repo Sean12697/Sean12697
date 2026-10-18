@@ -1,0 +1,59 @@
+name: Update profile
+
+on:
+  schedule:
+    - cron: "0 7 * * *" # 07:00 UTC daily
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "template.md"
+      - "profile.toml"
+      - "pyproject.toml"
+      - "src/**"
+      - ".github/workflows/update.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-profile
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install .
+
+      - name: Check template
+        run: profile-gen check
+
+      - name: Render README
+        env:
+          STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
+        run: profile-gen render
+
+      # The footer timestamp changes every run, so this commits daily. That
+      # daily commit is what keeps the scheduled workflow from being disabled
+      # for repository inactivity. Pushes made with GITHUB_TOKEN never
+      # retrigger workflows, so there is no loop.
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No changes"
+          else
+            git commit -m "chore: refresh profile ($(date -u +%F))"
+            git push
+          fi

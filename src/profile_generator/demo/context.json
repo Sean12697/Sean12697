@@ -1,0 +1,22 @@
+{
+  "stats": {
+    "hackathons": 28,
+    "beer_festivals": 38,
+    "beers": "6,000+",
+    "generated_at": "2026-10-12T19:49:15.861Z",
+    "raw": {
+      "generatedAt": "2026-10-12T19:49:15.861Z",
+      "timeline": {"total": 178, "hackathons": 28, "beerFestivals": 38},
+      "untappd": {"totalBeers": 6009, "totalCheckins": 6731, "formattedBeers": "6,000+", "formattedCheckins": "6,700+"},
+      "content": {"blogPosts": 32, "seoPosts": 4, "projects": {"total": 13}}
+    }
+  },
+  "steam": {
+    "games": [
+      {"appid": 1145360, "name": "Hades", "minutes_2weeks": 754, "minutes_total": 754, "is_new": true, "achievements_unlocked": 21, "achievements_total": 49},
+      {"appid": 1086940, "name": "Baldur's Gate 3", "minutes_2weeks": 412, "minutes_total": 9630, "is_new": false, "achievements_unlocked": 38, "achievements_total": 54},
+      {"appid": 413150, "name": "Stardew Valley", "minutes_2weeks": 95, "minutes_total": 4410, "is_new": false, "achievements_unlocked": 31, "achievements_total": 49},
+      {"appid": 105600, "name": "Terraria", "minutes_2weeks": 40, "minutes_total": 1220, "is_new": false, "achievements_unlocked": null, "achievements_total": null}
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+# Committed settings for profile-gen. Secrets do not belong here: use the
+# STEAM_API_KEY repository secret (or a local .env). Env vars and CLI flags
+# override anything set here.
+
+[settings]
+template = "template.md"
+output = "README.md"
+stats_url = "https://seanomahoney.com/stats.json"
+steam_id = "76561198101964519"
+steam_games = 5
+steam_fetch = 10
+steam_blocked_descriptors = [3]
